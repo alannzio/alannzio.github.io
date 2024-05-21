@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+#bc1{
+    font-family: sans-serif;
+    font-size: 30px;
+    background-image: url(./img/bc1.png);
+    min-height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 55px;
+}

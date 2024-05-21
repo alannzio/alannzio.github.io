@@ -17,7 +17,7 @@
         <li> <a href="#Portafolio">&nbsp Portafolio &nbsp</a></li>
         <li id="logo"><a href="#Inicio">&nbsp<i class="fa-solid fa-code">&nbsp</i></a></li>
         <li><a href="#experiencia">&nbsp Experiencia & Skills &nbsp</a></li>
-        <li><a href="#final">&nbsp Contacto</a></li>
+        <li><a href="#contactar">&nbsp Contacto</a></li>
         </ul>
     </nav>
     <!--Fin menu de navegación-->
@@ -26,8 +26,10 @@
        <section id="Inicio">
             <h2><strong><br>Alan Santana López</strong></h2>
             <h3 class="hastag"><br><strong>#Programador</strong><br></h3>
-            <h3 class="hastag"><strong>#Desarrollador de Páginas Web</strong><br></h3>
+            <h3 class="hastag"><strong>#Desarrollador de Páginas Web & Backend</strong><br></h3>
             <h3 class="hastag"><strong>#Desarrollador de Software</strong></h3>
+            <h3 class="hastag"><strong>#Hacking Ético</strong></h3>
+            <h3 class="hastag"><strong>#Diseño Asistido por Computadora</strong></h3>
             <section id="links">
                 <br> <a href="https://www.instagram.com/alannzio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/Alannsio1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -39,13 +41,15 @@
         <!--Fin de Bloque Inicio-->
         <!--Inicio de Bloque sobre mi-->
         <section id="SobreMi">
-            <img src="../img/fotosobremi.jpg" alt="Foto Alan Santana López" height="250px">
+            <img src="./img/fotosobremi2.jpg" alt="Foto Alan Santana López"  id="fotosobremi">
+            <br>
             <div id="bodysobremi">
                 <h2>Sobre Mi</h2>
                 <p>Me presento soy <strong>Alan Santana López</strong> actualmente estudiante, programador y me facina la <span>tecnología y programación</span>.En el corto lapso de tiempo que llevo haciendo ciertos proyectos me ha encantado realizar paginas ya que adquiero experiencia y abre las puertas a nuevas oportunidades.</p>
                 <p>Me defino como una persona creativa y enfocada en lo que realmente quiere lograr "El fracaso es la manera de empezar de nuevo, pero más inteligente" siempre hay que dar lo mejor para cumplir sus objetivos.</p>
                 <br><div class="masinfo"><button type="button">MÁS INFO</button></div>
             </div>
+            <br>
         </section>
         <!--Fin Bloque sobre mi-->
         <!--Inicio Bloque de Portafolio-->
@@ -54,7 +58,7 @@
             <h3>Proyectos</h3>
             <div class="filaportfolio">
                 <div class="card">
-                    <img src="../img/xp1.jpg" alt="">
+                    <img src="./img/xp1.jpg" alt="">
                     <h3>I3</h3>
                     <h4>Página Web para empresa</h4>
                     <p>En esta página se realizo un increible trabajo ya que su estructura se hizo de una manera bastante optimizada para cualquier navegador, ademas de ser mi primera página me dejo una gran experiencia.</p>
@@ -62,7 +66,7 @@
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
                 </div>   
                 <div class="card">
-                    <img src="../img/xp2.jpg" alt="">
+                    <img src="./img/xp2.jpg" alt="">
                     <h3>Video Juego</h3>
                     <h4>Unreal Engine</h4>
                     <p>Este video juego es el proyecto que más trabajo me costo, el juego se basaba en una guerra en distintas epocas a lo largo de la historia, el lenguaje de programación que se utilizo fue C++ por lo cual tenia cierta complejidad.</p>
@@ -70,20 +74,28 @@
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
                 </div>   
                 <div class="card">
-                    <img src="../img/xp5.jpg" alt="">
+                    <img src="./img/xp5.jpg" alt="">
                     <h3>Inteligencia Artificial</h3>
                     <h4>Zi</h4>
                     <p>Zi fue un gran proyecto, lo desarrolle en el lenguaje de programación python con ciertas librerias que me facilitaron el desarrollo de este proyecto, basicamente un asistente virtual.</p>
                     <div class="sep"></div>
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
-                </div>        
+                </div>
+                <div class="card">
+                    <img src="./img/xp77.jpg" alt="Diseño">
+                    <h3>Diseño Gráfico</h3>
+                    <h4>Portafolio</h4>
+                    <p></p>
+                    <div class="sep"></div>
+                    <div class="masinfo"><button type="button"><a href="./diseño.html">MÁS INFO</a></button></div>
+                </div>          
             </div>
         </section>
         <!--Fin del Bloque Portafolio-->
         <!--Inicio Bloque de xp-->
-        <section id="experiencia" class="section">
-            <h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Experiencia & Skills<br></h2>
-            <div class="gridexp">
+        <!-- <section id="experiencia"> -->
+        <h2 id="experiencia" class="op">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Experiencia & Skills<br></h2>
+            <div class="gridexp" id="experiencia" class="op">
                 <div class="cardxp">
                     <h2>Diseño Web</h2>
                     <h3 class="textoizquierda">2021-2022</h3>
@@ -102,15 +114,20 @@
                 <div class="cardxp">
                     <h2>SQL</h2>
                     <h3 class="textoizquierda">2023</h3>
-                    <p>Se manejar Linux de una buena manera principalmente distros basadas en debian, arch se me dificulta un poco y lo puedo utilizar con ciertos problemas pero en ambos me muevo simplemente por terminal no es tan complicado y puedo hacer servidores en linux sin problema alguno.</p>
+                    <p>SQL es realmente importante y fundamental para llevar a cabo toda la gestion de usuarios y va de la mano con PHP regularmente</p>
                 </div>
                 <div class="cardxp">
-                    <h2>JSx</h2>
+                    <h2>JS</h2>
                     <h3 class="textoizquierda">2023</h3>
-                    <p></p>
+                    <p>Me agrada utilizar "JS" ya que es muy util para realizar más interaccion en la página web, al igual que para realizar Backend</p>
+                </div>
+                <div class="cardxp">
+                    <h2>Reparación y diagnosticos</h2>
+                    <h3 class="textoizquierda">2019-2024</h3>
+                    <p>Realizo reparaciones de computadoras, laptops y se hacer diagnosticos y asi descartar problemas, pero sobre todo dar soluciones al momento en el que se requiere.</p>
                 </div>
             </div>
-        </section>
+        <!-- </section> -->
         <section id="contactar">
             <h2>Contacto</h2>
             <form id="form" action="">
@@ -136,7 +153,7 @@
             <a href="alannsio740@gmail.com" id="correoA">mail</a>
         </section>
     </article> 
-    <footer class="section">
+    <footer id="pie">
         <h2 id="final">&copy; Alannzio | Alan Santana Lopez </h2>
     </footer>
     <script>
