@@ -1,174 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="google-site-verification" content="pGzK4tepXkaifO3OMxCsj5XFv0rBmhz-Booerv95mtA" />
+    <meta name="google-site-verification" content="pGzK4tepXkaifO3OMxCsj5XFv0rBmhz-Booerv95mtA" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Alan Santana López: programador, desarrollador web y backend, hacking ético y diseño.">
+    <meta name="theme-color" content="#0b0d12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54540b6257.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Portafolio Alannzio</title>
-</head> 
+</head>
 <body>
-    <!--Menu de navegación-->
+    <!-- Menú de navegación -->
     <nav>
-        <ul>
-        <li> <a href="#SobreMi">Sobre Mi &nbsp</a></li>
-        <li> <a href="#Portafolio">&nbsp Portafolio &nbsp</a></li>
-        <li id="logo"><a href="#Inicio">&nbsp<i class="fa-solid fa-code">&nbsp</i></a></li>
-        <li><a href="#experiencia">&nbsp Experiencia & Skills &nbsp</a></li>
-        <li><a href="#contactar">&nbsp Contacto</a></li>
-        </ul>
+        <div class="container">
+            <a href="#Inicio" id="logo" aria-label="Inicio"><i class="fa-solid fa-code"></i></a>
+            <ul>
+                <li><a href="#SobreMi">Sobre mí</a></li>
+                <li><a href="#Portafolio">Portafolio</a></li>
+                <li><a href="#experiencia">Experiencia &amp; Skills</a></li>
+                <li><a href="#contactar">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
-    <!--Fin menu de navegación-->
-    <!--Bloque de Inicio-->
-       <article>
-       <section id="Inicio">
-            <h2><strong><br>Alan Santana López</strong></h2>
-            <h3 class="hastag"><br><strong>#Programador</strong><br></h3>
-            <h3 class="hastag"><strong>#Desarrollador de Páginas Web & Backend</strong><br></h3>
-            <h3 class="hastag"><strong>#Desarrollador de Software</strong></h3>
-            <h3 class="hastag"><strong>#Hacking Ético</strong></h3>
-            <h3 class="hastag"><strong>#Diseño Asistido por Computadora</strong></h3>
-            <section id="links">
-                <br> <a href="https://www.instagram.com/alannzio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/Alannsio1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/alan-santana-l%C3%B3pez-b78663239/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://paypal.me/Alansantanalopez?country.x=MX&locale.x=es_XC" target="_blank"><i class="fa-brands fa-paypal"></i></a>
-                <a href="https://github.com/alannzio" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </section>
-        </section>
-        <!--Fin de Bloque Inicio-->
-        <!--Inicio de Bloque sobre mi-->
-        <section id="SobreMi">
-            <img src="./img/fotosobremi2.jpg" alt="Foto Alan Santana López"  id="fotosobremi">
-            <br>
-            <div id="bodysobremi">
-                <h2>Sobre Mi</h2>
-                <p>Me presento soy <strong>Alan Santana López</strong> actualmente estudiante, programador y me facina la <span>tecnología y programación</span>.En el corto lapso de tiempo que llevo haciendo ciertos proyectos me ha encantado realizar paginas ya que adquiero experiencia y abre las puertas a nuevas oportunidades.</p>
-                <p>Me defino como una persona creativa y enfocada en lo que realmente quiere lograr "El fracaso es la manera de empezar de nuevo, pero más inteligente" siempre hay que dar lo mejor para cumplir sus objetivos.</p>
-                <br><div class="masinfo"><button type="button">MÁS INFO</button></div>
+
+    <main>
+        <!-- Inicio -->
+        <header id="Inicio">
+            <div class="container">
+                <p class="hero-kicker">Portafolio</p>
+                <h1>Alan Santana López</h1>
+                <div class="hastags">
+                    <span class="hastag">#Programador</span>
+                    <span class="hastag">#Desarrollador Web &amp; Backend</span>
+                    <span class="hastag">#Desarrollador de Software</span>
+                    <span class="hastag">#Hacking Ético</span>
+                    <span class="hastag">#Diseño Asistido por Computadora</span>
+                </div>
+                <div id="links">
+                    <a href="https://www.instagram.com/alannzio/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/Alannsio1" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/alan-santana-l%C3%B3pez-b78663239/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://paypal.me/Alansantanalopez?country.x=MX&locale.x=es_XC" target="_blank" rel="noopener" aria-label="PayPal"><i class="fa-brands fa-paypal"></i></a>
+                    <a href="https://github.com/alannzio" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <br>
+        </header>
+
+        <!-- Sobre mí -->
+        <section id="SobreMi" class="section">
+            <div class="container about">
+                <img src="./img/fotosobremi2.jpg" alt="Foto Alan Santana López" id="fotosobremi">
+                <div id="bodysobremi">
+                    <h2 class="section-title">Sobre mí</h2>
+                    <br>
+                    <p>Me presento, soy <strong>Alan Santana López</strong>, actualmente estudiante y programador, y me fascina la <span>tecnología y la programación</span>. En el corto lapso de tiempo que llevo haciendo proyectos me ha encantado realizar páginas, ya que adquiero experiencia y abre las puertas a nuevas oportunidades.</p>
+                    <p>Me defino como una persona creativa y enfocada en lo que realmente quiere lograr. "El fracaso es la manera de empezar de nuevo, pero más inteligente": siempre hay que dar lo mejor para cumplir los objetivos.</p>
+                    <a href="#contactar" class="btn">Contáctame</a>
+                </div>
+            </div>
         </section>
-        <!--Fin Bloque sobre mi-->
-        <!--Inicio Bloque de Portafolio-->
+
+        <!-- Portafolio -->
         <section id="Portafolio" class="section">
-            <h2>Portafolio</h2>
-            <h3>Proyectos</h3>
-            <div class="filaportfolio">
-                <div class="card">
-                    <img src="./img/xp1.jpg" alt="">
-                    <h3>I3</h3>
-                    <h4>Página Web para empresa</h4>
-                    <p>En esta página se realizo un increible trabajo ya que su estructura se hizo de una manera bastante optimizada para cualquier navegador, ademas de ser mi primera página me dejo una gran experiencia.</p>
-                    <div class="sep"></div>
-                    <div class="masinfo"><button type="button">MÁS INFO</button></div>
-                </div>   
-                <div class="card">
-                    <img src="./img/xp2.jpg" alt="">
-                    <h3>Video Juego</h3>
-                    <h4>Unreal Engine</h4>
-                    <p>Este video juego es el proyecto que más trabajo me costo, el juego se basaba en una guerra en distintas epocas a lo largo de la historia, el lenguaje de programación que se utilizo fue C++ por lo cual tenia cierta complejidad.</p>
-                    <div class="sep"></div>
-                    <div class="masinfo"><button type="button">MÁS INFO</button></div>
-                </div>   
-                <div class="card">
-                    <img src="./img/xp5.jpg" alt="">
-                    <h3>Inteligencia Artificial</h3>
-                    <h4>Zi</h4>
-                    <p>Zi fue un gran proyecto, lo desarrolle en el lenguaje de programación python con ciertas librerias que me facilitaron el desarrollo de este proyecto, basicamente un asistente virtual.</p>
-                    <div class="sep"></div>
-                    <div class="masinfo"><button type="button">MÁS INFO</button></div>
+            <div class="container">
+                <h2 class="section-title">Portafolio</h2>
+                <p class="section-sub">Algunos de los proyectos en los que he trabajado.</p>
+                <div class="filaportfolio">
+                    <article class="card">
+                        <img src="./img/xp1.jpg" alt="Proyecto I3" loading="lazy">
+                        <div class="card-body">
+                            <h3>I3</h3>
+                            <h4>Página web para empresa</h4>
+                            <p>En esta página se realizó un increíble trabajo, ya que su estructura se hizo de manera bastante optimizada para cualquier navegador. Además de ser mi primera página, me dejó una gran experiencia.</p>
+                            <button type="button" class="btn btn-ghost">Más info</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/xp2.jpg" alt="Videojuego en Unreal Engine" loading="lazy">
+                        <div class="card-body">
+                            <h3>Videojuego</h3>
+                            <h4>Unreal Engine · C++</h4>
+                            <p>Es el proyecto que más trabajo me costó. El juego se basaba en una guerra en distintas épocas a lo largo de la historia; se utilizó C++, por lo que tenía cierta complejidad.</p>
+                            <button type="button" class="btn btn-ghost">Más info</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/xp5.jpg" alt="Inteligencia Artificial Zi" loading="lazy">
+                        <div class="card-body">
+                            <h3>Inteligencia Artificial</h3>
+                            <h4>Zi · Python</h4>
+                            <p>Zi fue un gran proyecto. Lo desarrollé en Python con ciertas librerías que me facilitaron el desarrollo; básicamente es un asistente virtual.</p>
+                            <button type="button" class="btn btn-ghost">Más info</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/xp77.jpg" alt="Diseño gráfico" loading="lazy">
+                        <div class="card-body">
+                            <h3>Diseño Gráfico</h3>
+                            <h4>Portafolio</h4>
+                            <p>Logos, rediseños de páginas web y aplicaciones: una muestra de mi trabajo de diseño.</p>
+                            <a href="./diseño.html" class="btn btn-ghost">Más info</a>
+                        </div>
+                    </article>
                 </div>
-                <div class="card">
-                    <img src="./img/xp77.jpg" alt="Diseño">
-                    <h3>Diseño Gráfico</h3>
-                    <h4>Portafolio</h4>
-                    <p></p>
-                    <div class="sep"></div>
-                    <div class="masinfo"><button type="button"><a href="./diseño.html">MÁS INFO</a></button></div>
-                </div>          
             </div>
         </section>
-        <!--Fin del Bloque Portafolio-->
-        <!--Inicio Bloque de xp-->
-        <!-- <section id="experiencia"> -->
-        <h2 id="experiencia" class="op">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Experiencia & Skills<br></h2>
-            <div class="gridexp" id="experiencia" class="op">
-                <div class="cardxp">
-                    <h2>Diseño Web</h2>
-                    <h3 class="textoizquierda">2021-2022</h3>
-                    <p>Actualmente estoy practicando y tratando de ganar más experiencia en este campo, por el momento se me facilita mucho y me parece bastante divertido, claro que hasta cierto punto es complejo pero se me da bastante bien.</p>
-                </div>
-                <div class="cardxp">
-                    <h2>Python</h2>
-                    <h3 class="textoizquierda">2020-2022</h3>
-                    <p>Este lenguaje de programación es mi preferido por lo simple y eficiente que es, ademas que es el lenguaje de programación en el cual he realizado buenos proyectos que han facilitado mi vida, asó como "Zi" y puedo realizar bastantes cosas aqui sin tantas limitaciones.</p>
-                </div>
-                <div class="cardxp">
-                    <h2>Linux</h2>
-                    <h3 class="textoizquierda">2021-2022</h3>
-                    <p>Se manejar Linux de una buena manera principalmente distros basadas en debian, arch se me dificulta un poco y lo puedo utilizar con ciertos problemas pero en ambos me muevo simplemente por terminal no es tan complicado y puedo hacer servidores en linux sin problema alguno.</p>
-                </div>
-                <div class="cardxp">
-                    <h2>SQL</h2>
-                    <h3 class="textoizquierda">2023</h3>
-                    <p>SQL es realmente importante y fundamental para llevar a cabo toda la gestion de usuarios y va de la mano con PHP regularmente</p>
-                </div>
-                <div class="cardxp">
-                    <h2>JS</h2>
-                    <h3 class="textoizquierda">2023</h3>
-                    <p>Me agrada utilizar "JS" ya que es muy util para realizar más interaccion en la página web, al igual que para realizar Backend</p>
-                </div>
-                <div class="cardxp">
-                    <h2>Reparación y diagnosticos</h2>
-                    <h3 class="textoizquierda">2019-2024</h3>
-                    <p>Realizo reparaciones de computadoras, laptops y se hacer diagnosticos y asi descartar problemas, pero sobre todo dar soluciones al momento en el que se requiere.</p>
+
+        <!-- Experiencia -->
+        <section id="experiencia" class="section">
+            <div class="container">
+                <h2 class="section-title">Experiencia &amp; Skills</h2>
+                <p class="section-sub">Tecnologías y áreas en las que he trabajado.</p>
+                <div class="gridexp">
+                    <article class="cardxp">
+                        <h3>Diseño Web</h3>
+                        <span class="textoizquierda">2021 – 2022</span>
+                        <p>Actualmente estoy practicando y tratando de ganar más experiencia en este campo. Por el momento se me facilita mucho y me parece bastante divertido; claro que hasta cierto punto es complejo, pero se me da bastante bien.</p>
+                    </article>
+                    <article class="cardxp">
+                        <h3>Python</h3>
+                        <span class="textoizquierda">2020 – 2022</span>
+                        <p>Es mi lenguaje preferido por lo simple y eficiente que es. Con él he realizado buenos proyectos que han facilitado mi vida, como "Zi", y puedo hacer bastantes cosas sin tantas limitaciones.</p>
+                    </article>
+                    <article class="cardxp">
+                        <h3>Linux</h3>
+                        <span class="textoizquierda">2021 – 2022</span>
+                        <p>Sé manejar Linux de buena manera, principalmente distros basadas en Debian. Arch se me dificulta un poco, pero en ambos me muevo por terminal y puedo montar servidores sin problema alguno.</p>
+                    </article>
+                    <article class="cardxp">
+                        <h3>SQL</h3>
+                        <span class="textoizquierda">2023</span>
+                        <p>SQL es fundamental para llevar a cabo la gestión de usuarios y va de la mano con PHP regularmente.</p>
+                    </article>
+                    <article class="cardxp">
+                        <h3>JavaScript</h3>
+                        <span class="textoizquierda">2023</span>
+                        <p>Me agrada utilizar JS ya que es muy útil para dar más interacción a la página web, al igual que para realizar Backend.</p>
+                    </article>
+                    <article class="cardxp">
+                        <h3>Reparación y diagnósticos</h3>
+                        <span class="textoizquierda">2019 – 2024</span>
+                        <p>Realizo reparaciones de computadoras y laptops, y sé hacer diagnósticos para descartar problemas, sobre todo dar soluciones en el momento en que se requiere.</p>
+                    </article>
                 </div>
             </div>
-        <!-- </section> -->
-        <section id="contactar">
-            <h2>Contacto</h2>
-            <form id="form" action="">
-            <div class="itemform">
-                <label for="name">Nombre</label> <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
-            </div>
-            <div class="itemform">
-                <label for="name">Empresa</label>
-                <input type="text" id="Empresa" name="Empresa" minlength="2" maxlength="64" size="32">
-            </div>
-            <div class="itemform">    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email" minlength="6" maxlength="64" size="32" required>
-            </div>
-            <div class="itemform">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="menssage" cols="30" rows="10"></textarea>
-            </div>
-            <div class="itemform">
-                <input type="submit" name="Enviar" value="CONTACTAR">
-            </div>
-            </form>
-            <a href="alannsio740@gmail.com" id="correoA">mail</a>
         </section>
-    </article> 
+
+        <!-- Contacto -->
+        <section id="contactar" class="section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-sub">¿Tienes un proyecto en mente? Escríbeme.</p>
+                <form id="form" action="">
+                    <div class="itemform">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" required>
+                    </div>
+                    <div class="itemform">
+                        <label for="Empresa">Empresa</label>
+                        <input type="text" id="Empresa" name="Empresa" minlength="2" maxlength="64">
+                    </div>
+                    <div class="itemform">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" minlength="6" maxlength="64" required>
+                    </div>
+                    <div class="itemform">
+                        <label for="menssage">Mensaje</label>
+                        <textarea name="message" id="menssage" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Contactar</button>
+                </form>
+                <a href="mailto:alannsio740@gmail.com" id="correoA" tabindex="-1" aria-hidden="true">mail</a>
+            </div>
+        </section>
+    </main>
+
     <footer id="pie">
-        <h2 id="final">&copy; Alannzio | Alan Santana Lopez </h2>
+        <div class="container">&copy; Alannzio | Alan Santana López</div>
     </footer>
+
     <script>
-       const $form = document.querySelector("#form")
-       const $buttonMailto = document.querySelector("#correoA")
+        const $form = document.querySelector("#form");
+        const $buttonMailto = document.querySelector("#correoA");
 
-       $form.addEventListener('submit', handleSubmit)
-
-       function handleSubmit(event){
-        event.preventDefault()
-        const form = new FormData(this)
-        console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', `mailto:alannsio740@gmail.com?subjec= ${form.get('name')} ${form.get('email')}&body= ${form.get('message')}`)
-        $buttonMailto.click()
-    } 
+        $form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const data = new FormData(this);
+            const subject = encodeURIComponent(`Contacto de ${data.get('nombre')} (${data.get('email')})`);
+            const body = encodeURIComponent(data.get('message') || '');
+            $buttonMailto.setAttribute('href', `mailto:alannsio740@gmail.com?subject=${subject}&body=${body}`);
+            $buttonMailto.click();
+        });
     </script>
 </body>
 </html>
