@@ -267,3 +267,28 @@ footer {
     html { scroll-behavior: auto; }
     * { transition: none !important; }
 }
+
+/* ============ Mejoras de portada ============ */
+#logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+#logo i { color: var(--accent); }
+
+.hero-kicker { display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: rgba(19,23,32,.7); text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--muted); }
+.hero-kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 4px rgba(52,211,153,.2); }
+.grad { background: linear-gradient(90deg, #67e8f9, #22d3ee 40%, #818cf8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-lead { max-width: 56ch; color: #b6bccb; font-size: clamp(1rem, 1.6vw, 1.2rem); margin-bottom: 28px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 32px; }
+.hero-cta .btn { padding: 14px 28px; font-size: 15px; }
+#Inicio h1 { margin: 20px 0; }
+
+.techbar { border-block: 1px solid var(--border); background: var(--surface); }
+.techbar .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 36px; padding-block: 22px; }
+.techbar span { color: var(--muted); font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+
+nav ul a { position: relative; padding: 4px 0; }
+nav ul a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: var(--accent); transition: width .25s; }
+nav ul a:hover::after { width: 100%; }
+
+@media (max-width: 560px) {
+    #logo span { display: none; }
+    .hero-cta .btn { flex: 1; text-align: center; }
+}
