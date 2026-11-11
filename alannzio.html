@@ -23,7 +23,8 @@
     <nav>
         <div class="container">
             <a href="#Inicio" id="logo" aria-label="Inicio"><i class="fa-solid fa-code"></i> <span>alannzio</span></a>
-            <ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+            <ul id="navMenu">
                 <li><a href="#SobreMi">Sobre mí</a></li>
                 <li><a href="#Portafolio">Portafolio</a></li>
                 <li><a href="#experiencia">Experiencia &amp; Skills</a></li>
@@ -35,7 +36,8 @@
     <main>
         <!-- Inicio -->
         <header id="Inicio">
-            <div class="container">
+            <div class="container hero-grid">
+                <div class="hero-text">
                 <p class="hero-kicker"><span class="dot"></span> Disponible para proyectos</p>
                 <h1>Hola, soy <span class="grad">Alan Santana López</span></h1>
                 <p class="hero-lead">Programador y estudiante apasionado por la tecnología. Desarrollo páginas web, backend y software, con interés en hacking ético y diseño.</p>
@@ -57,6 +59,20 @@
                     <a href="https://paypal.me/Alansantanalopez?country.x=MX&locale.x=es_XC" target="_blank" rel="noopener" aria-label="PayPal"><i class="fa-brands fa-paypal"></i></a>
                     <a href="https://github.com/alannzio" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
+                </div>
+                <aside class="hero-card" aria-hidden="true">
+                    <div class="hc-bar"><i></i><i></i><i></i><span>alan.py</span></div>
+<pre><span class="c-k">class</span> <span class="c-f">Alan</span>:
+    <span class="c-v">rol</span> = <span class="c-s">"Desarrollador"</span>
+    <span class="c-v">stack</span> = [
+        <span class="c-s">"Python"</span>, <span class="c-s">"JavaScript"</span>,
+        <span class="c-s">"C++"</span>, <span class="c-s">"SQL"</span>, <span class="c-s">"Linux"</span>
+    ]
+    <span class="c-v">pasion</span> = <span class="c-s">"Crear cosas útiles"</span>
+
+    <span class="c-k">def</span> <span class="c-f">contactar</span>(self):
+        <span class="c-k">return</span> <span class="c-s">"¡Hablemos!"</span></pre>
+                </aside>
             </div>
         </header>
 
@@ -69,7 +85,7 @@
 
         <!-- Sobre mí -->
         <section id="SobreMi" class="section">
-            <div class="container about">
+            <div class="container about reveal">
                 <img src="./img/fotosobremi2.jpg" alt="Foto Alan Santana López" id="fotosobremi">
                 <div id="bodysobremi">
                     <h2 class="section-title">Sobre mí</h2>
@@ -87,7 +103,7 @@
                 <h2 class="section-title">Portafolio</h2>
                 <p class="section-sub">Algunos de los proyectos en los que he trabajado.</p>
                 <div class="filaportfolio">
-                    <article class="card">
+                    <article class="card reveal">
                         <img src="./img/xp1.jpg" alt="Proyecto I3" loading="lazy">
                         <div class="card-body">
                             <h3>I3</h3>
@@ -96,7 +112,7 @@
                             <button type="button" class="btn btn-ghost">Más info</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card reveal">
                         <img src="./img/xp2.jpg" alt="Videojuego en Unreal Engine" loading="lazy">
                         <div class="card-body">
                             <h3>Videojuego</h3>
@@ -105,7 +121,7 @@
                             <button type="button" class="btn btn-ghost">Más info</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card reveal">
                         <img src="./img/xp5.jpg" alt="Inteligencia Artificial Zi" loading="lazy">
                         <div class="card-body">
                             <h3>Inteligencia Artificial</h3>
@@ -114,7 +130,7 @@
                             <button type="button" class="btn btn-ghost">Más info</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card reveal">
                         <img src="./img/xp77.jpg" alt="Diseño gráfico" loading="lazy">
                         <div class="card-body">
                             <h3>Diseño Gráfico</h3>
@@ -133,32 +149,32 @@
                 <h2 class="section-title">Experiencia &amp; Skills</h2>
                 <p class="section-sub">Tecnologías y áreas en las que he trabajado.</p>
                 <div class="gridexp">
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>Diseño Web</h3>
                         <span class="textoizquierda">2021 – 2022</span>
                         <p>Actualmente estoy practicando y tratando de ganar más experiencia en este campo. Por el momento se me facilita mucho y me parece bastante divertido; claro que hasta cierto punto es complejo, pero se me da bastante bien.</p>
                     </article>
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>Python</h3>
                         <span class="textoizquierda">2020 – 2022</span>
                         <p>Es mi lenguaje preferido por lo simple y eficiente que es. Con él he realizado buenos proyectos que han facilitado mi vida, como "Zi", y puedo hacer bastantes cosas sin tantas limitaciones.</p>
                     </article>
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>Linux</h3>
                         <span class="textoizquierda">2021 – 2022</span>
                         <p>Sé manejar Linux de buena manera, principalmente distros basadas en Debian. Arch se me dificulta un poco, pero en ambos me muevo por terminal y puedo montar servidores sin problema alguno.</p>
                     </article>
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>SQL</h3>
                         <span class="textoizquierda">2023</span>
                         <p>SQL es fundamental para llevar a cabo la gestión de usuarios y va de la mano con PHP regularmente.</p>
                     </article>
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>JavaScript</h3>
                         <span class="textoizquierda">2023</span>
                         <p>Me agrada utilizar JS ya que es muy útil para dar más interacción a la página web, al igual que para realizar Backend.</p>
                     </article>
-                    <article class="cardxp">
+                    <article class="cardxp reveal">
                         <h3>Reparación y diagnósticos</h3>
                         <span class="textoizquierda">2019 – 2024</span>
                         <p>Realizo reparaciones de computadoras y laptops, y sé hacer diagnósticos para descartar problemas, sobre todo dar soluciones en el momento en que se requiere.</p>
@@ -172,7 +188,7 @@
             <div class="container">
                 <h2 class="section-title">Contacto</h2>
                 <p class="section-sub">¿Tienes un proyecto en mente? Escríbeme.</p>
-                <form id="form" action="">
+                <form id="form" class="reveal" action="">
                     <div class="itemform">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" required>
@@ -201,6 +217,34 @@
     </footer>
 
     <script>
+        document.documentElement.classList.add('js');
+        // Menú móvil
+        const toggle = document.getElementById('navToggle');
+        const menu = document.getElementById('navMenu');
+        const closeMenu = () => { menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); };
+        toggle.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+        // Animación de entrada y enlace activo
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(es => es.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+            }), { threshold: .12 });
+            document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+            const links = [...menu.querySelectorAll('a')];
+            const spy = new IntersectionObserver(es => es.forEach(e => {
+                if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+            }), { rootMargin: '-45% 0px -50% 0px' });
+            document.querySelectorAll('section[id]').forEach(sec => spy.observe(sec));
+        } else {
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+        }
+
         const $form = document.querySelector("#form");
         const $buttonMailto = document.querySelector("#correoA");
 
